@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.game-board{
+    width: 100%;
+    height: 660px;
+    border: 1px solid #333;
+    margin: 0 auto;
+    position:relative;
+    overflow: hidden;
+}
+.background{
+    width: 100%;
+    position: absolute;
+    animation: background-animation 20s infinite linear;
+}
+
+
+@keyframes background-animation {
+    from{
+        bottom: 0;
+    }
+    to{
+        bottom: -475%;
+    }
+}
+
+.planeone {
+    position: absolute;
+    width: 5%;
+    right: 50%;
+    bottom: 15%;
+}
+
+.movement{
+    animation: plane-animation 10s infinite ease-in-out;
+}
+
+
+
+@keyframes plane-animation {
+    0%{
+        right: 5%;
+    } 
+    100%{
+        right: 5%;
+    }  
+}   
+
+
+
+.n00{
+    position: absolute;
+    right: 92%;
+    width: 3%;
+    bottom: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+.n01 {
+    position: absolute;
+    right: 84%;
+    width: 3%;
+    bottom: 5px;
+    user-select: none;
+        cursor: pointer;
+}
+.n02 {
+    position: absolute;
+    right: 76%;
+    width: 3%;
+    bottom: 5px;
+    user-select: none;
+        cursor: pointer;
+}
+.n03 {
+    position: absolute;
+    right: 68%;
+    width: 3%;
+    bottom: 5px;
+    user-select: none;
+        cursor: pointer;
+}
+
+.n04 {
+    position: absolute;
+    right: 60%;
+    width: 3%;
+    bottom: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.n05 {
+    position: absolute;
+    right: 51%;
+    width: 3%;
+    bottom: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.n06 {
+    position: absolute;
+    right: 42%;
+    width: 3%;
+    bottom: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+.n07 {
+    position: absolute;
+    right: 34%;
+    width: 3%;
+    bottom: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+.n08 {
+    position: absolute;
+    right: 25%;
+    width: 3%;
+    bottom: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+.n09 {
+    position: absolute;
+    right: 16%;
+    width: 3%;
+    bottom: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+.n010 {
+    position: absolute;
+    right: 5%;
+    width: 5.2%;
+    bottom: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+
+#btnZero:hover{
+    width: 4%;
+}
+#btnOne:hover {
+    width: 4%;
+}
+#btnTwo:hover {
+    width: 4%;
+}
+#btnThree:hover {
+    width: 4%;
+}
+#btnFour:hover {
+    width: 4%;
+}
+#btnFive:hover {
+    width: 4%;
+}
+#btnSix:hover {
+    width: 4%;
+}
+#btnSeven:hover {
+    width: 4%;
+}
+#btnEight:hover {
+    width: 4%;
+}
+#btnNine:hover {
+    width: 4%;
+}
+
+#btnTen:hover {
+    width: 6.2%;
+}
