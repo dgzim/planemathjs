@@ -1,12 +1,24 @@
-
+//posicionamento inicial
+document.querySelector(".menuFinal").style.right = '200%';
+document.getElementById('questionBox').style.right = "200%";
+document.getElementById('scoreBoard').style.right = '200%';
+document.getElementById('lifeBoard').style.right = '-20%';
+document.getElementById('btnZero').style.right = '200%';
+document.getElementById('btnOne').style.right = "200%";
+document.getElementById('btnTwo').style.right = '200%';
+document.getElementById('btnThree').style.right = '-20%';
+document.getElementById('btnFour').style.right = '200%';
+document.getElementById('btnFive').style.right = "200%";
+document.getElementById('btnSix').style.right = '200%';
+document.getElementById('btnSeven').style.right = '-20%';
+document.getElementById('btnEight').style.right = '200%';
+document.getElementById('btnNine').style.right = '200%';
+document.getElementById('btnTen').style.right = '200%';
 
 let scoreInicial = 0, scoreAtual, inicialLife = 3, actualLife, heartMove, highScore = 0;
 
 
-document.querySelector(".menuFinal").style.right = '200%';
-document.getElementById('questionBox').style.right = "200%";
-document.getElementById('scoreBoard').style.right = '200%';
-document.getElementById('lifeBoard').style.right = '-20%'
+
 let size = 0;
 let animaSize;
 
@@ -57,9 +69,7 @@ document.getElementById('shoot').style.right = -200 + percent;
 document.getElementById('shootEnemie').style.bottom = enemieResty + percent;
 positon = 50;
 function gameplay() {
-    document.getElementById('menuInicial').style.right = '140%';
-    document.getElementById('lifeBoard').style.right = '3%';
-    document.querySelector(".menuFinal").style.right = '200%';
+    inicialPositions();
     scoreAtual = scoreInicial;
     actualLife = inicialLife;
     enemieRandomize();
@@ -395,8 +405,20 @@ function loseGame() {
     document.getElementById('scoreBoard').style.right = '200%';
     document.getElementById('enemie').style.bottom = enemieResty + percent;
     document.querySelector(".menuFinal").style.right = '38%';
-
-
+    document.getElementById('questionBox').style.right = "200%";
+    document.getElementById('scoreBoard').style.right = '200%';
+    document.getElementById('lifeBoard').style.right = '-20%';
+    document.getElementById('btnZero').style.right = '200%';
+    document.getElementById('btnOne').style.right = "200%";
+    document.getElementById('btnTwo').style.right = '200%';
+    document.getElementById('btnThree').style.right = '-20%';
+    document.getElementById('btnFour').style.right = '200%';
+    document.getElementById('btnFive').style.right = "200%";
+    document.getElementById('btnSix').style.right = '200%';
+    document.getElementById('btnSeven').style.right = '-20%';
+    document.getElementById('btnEight').style.right = '200%';
+    document.getElementById('btnNine').style.right = '200%';
+    document.getElementById('btnTen').style.right = '200%';
     document.getElementById('scoreFinalShow').textContent = scoreAtual;
     if (scoreAtual > highScore) {
         highScore = scoreAtual;
@@ -429,5 +451,21 @@ function lifeIniciator() {
         size = 0;
         lifeExpand(2);
     }, 1500);
- }
-
+}
+ 
+function inicialPositions() {
+    document.getElementById('btnZero').style.right = '92%';
+    document.getElementById('btnOne').style.right = "84%";
+    document.getElementById('btnTwo').style.right = '76%';
+    document.getElementById('btnThree').style.right = '68%';
+    document.getElementById('btnFour').style.right = '60%';
+    document.getElementById('btnFive').style.right = "51%";
+    document.getElementById('btnSix').style.right = '42%';
+    document.getElementById('btnSeven').style.right = '34%';
+    document.getElementById('btnEight').style.right = '25%';
+    document.getElementById('btnNine').style.right = '16%';
+    document.getElementById('btnTen').style.right = '5%';
+    document.getElementById('menuInicial').style.right = '140%';
+    document.getElementById('lifeBoard').style.right = '3%';
+    document.querySelector(".menuFinal").style.right = '200%';
+}

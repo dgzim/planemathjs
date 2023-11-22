@@ -52,7 +52,7 @@
 .planeone{
     width: 100%;
 }
-.numberBoard{
+#numberBoard{
     font-family: 'Press Start 2P';
     color: white;
         text-shadow:
