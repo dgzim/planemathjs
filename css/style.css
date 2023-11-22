@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.game-board{
+    width: 100%;
+    height: 38.2rem;
+    border: 1px solid #333;
+    margin: 0 auto;
+    position:relative;
+    overflow: hidden;
+}
+.background{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    animation: background-animation 20s infinite linear;
+}
+
+
+@keyframes background-animation {
+    from{
+        bottom: 0;
+    }
+    to{
+        bottom: -475%;
+    }
+}
+#shoot{
+    position: absolute;
+    width: 2%;
+    right: 50%;
+    bottom: 50%;
+}
+
+.shootone{
+    width:100%;
+}
+
+#plane {
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    right: 50%;
+    bottom: 15%;
+}
+.planeone{
+    width: 100%;
+}
+
+
+.n00{
+    position: absolute;
+    right: 92%;
+    width: 3%;
+    bottom: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+.n01 {
+    position: absolute;
+    right: 84%;
+    width: 3%;
+    bottom: 5px;
+    user-select: none;
+        cursor: pointer;
+}
+.n02 {
+    position: absolute;
+    right: 76%;
+    width: 3%;
+    bottom: 5px;
+    user-select: none;
+        cursor: pointer;
+}
+.n03 {
+    position: absolute;
+    right: 68%;
+    width: 3%;
+    bottom: 5px;
+    user-select: none;
+        cursor: pointer;
+}
+
+.n04 {
+    position: absolute;
+    right: 60%;
+    width: 3%;
+    bottom: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.n05 {
+    position: absolute;
+    right: 51%;
+    width: 3%;
+    bottom: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.n06 {
+    position: absolute;
+    right: 42%;
+    width: 3%;
+    bottom: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+.n07 {
+    position: absolute;
+    right: 34%;
+    width: 3%;
+    bottom: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+.n08 {
+    position: absolute;
+    right: 25%;
+    width: 3%;
+    bottom: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+.n09 {
+    position: absolute;
+    right: 16%;
+    width: 3%;
+    bottom: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+.n010 {
+    position: absolute;
+    right: 5%;
+    width: 5.2%;
+    bottom: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+
+
+#enemie{
+    position: absolute;
+        width: 6%;
+        height: 5%;
+        right: 50%;
+        bottom: 85%;
+}
+.en3{
+    width: 100%;
+}
+
+#shootEnemie{
+    position: absolute;
+    width: 2.5%;
+    height: 2.5%;
+    right: 50%;
+}
+.shoots{
+    width: 100%;
+}
+#questionBox{
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    right: 39%;
+    bottom: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    font-family: 'Press Start 2P';
+
+}
+
+#menuInicial{
+    position: absolute;
+    font-family: 'Press Start 2P';
+    right: 38%;
+    bottom: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #C7D941;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border:5px solid black;
+    border-radius: 10px;
+}
+
+#btnInit{
+    border: 2px solid white;
+    background-color:#F2A922 ;
+    padding: 10px 5px 10px 5px;
+    margin-top: 30px;
+    font-family: 'Press Start 2P';
+    color: white;
+    box-shadow:2px 2px black;
+}
+
+#gameName{
+    color: white;
+    text-shadow: 
+    3px 3px black,
+    -3px 3px black,
+    3px -3px black,
+    -3px -3px black;
+}
+#numberOne{
+    color: white;
+        text-shadow:
+            3px 3px black,
+            -3px 3px black,
+            3px -3px black,
+            -3px -3px black;
+}
+#response {
+    color: white;
+    text-shadow:
+        3px 3px black,
+        -3px 3px black,
+        3px -3px black,
+        -3px -3px black;
+}
+.equal{
+    color: white;
+        text-shadow:
+            3px 3px black,
+            -3px 3px black,
+            3px -3px black,
+            -3px -3px black;
+}
+.plus{
+    color: white;
+        text-shadow:
+            3px 3px black,
+            -3px 3px black,
+            3px -3px black,
+            -3px -3px black;
+}
+
+#lifeBoard{
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    bottom: 85%;
+    right: 3%;
+    display: flex;
+
+}
+
+#lifeOne{
+    width: 100%;
+}
+#lifeTwo{
+    width: 100%;
+}
+#lifeThree{
+    width: 100%;
+}
+
+#scoreBoard{
+    display: flex;
+    position: absolute;
+    font-family: 'Press Start 2P';
+    bottom: 90%;
+    right: 75%;
+    color: white;
+    text-shadow:
+        3px 3px black,
+        -3px 3px black,
+        3px -3px black,
+        -3px -3px black;
+}
+
+#fixed {
+    font-size: 150%;   
+}
+#score {
+    font-size: 150%;
+}
+
+.menuFinal{
+    width: 30%;
+        height: 50%;
+        position: absolute;
+        font-family: 'Press Start 2P';
+        right: 38%;
+        bottom: 35%;
+        background-color: #C7D941;
+        border: 5px solid black;
+        border-radius: 10px;
+        font-size: 70%;
+        color: white;
+            text-shadow:
+                3px 3px black,
+                -3px 3px black,
+                3px -3px black,
+                -3px -3px black;
+}
+#congrats{
+    padding-top: 10%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 0%;
+}
+
+.scoreText{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.scorebox{
+    margin-top: -10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 25%;
+}
+.HighScoreBox{
+    margin-bottom: -10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 25%;
+}
+
+#btnAgain{
+    margin-left: 20%;
+    width: 60%;
+    bottom: 30%;
+    border: 2px solid white;
+    background-color: #F2A922;
+    padding: 10px 5px 10px 5px;
+    margin-top: 30px;
+    font-family: 'Press Start 2P';
+    color: white;
+    text-shadow:
+            1px 1px black,
+            -1px 1px black,
+            1px -1px black,
+            -1px -1px black;
+}
