@@ -311,7 +311,6 @@ function enemieRandomize() {
 
 
     document.getElementById('numberOne').textContent = medio;
-    document.getElementById('numberTwo').textContent = "  ";
     document.getElementById('response').textContent = maior;
     if (menor == 0) {
         enemieRestx = 91.5;
